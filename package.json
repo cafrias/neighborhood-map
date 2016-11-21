@@ -1,0 +1,12 @@
+{
+  "name": "Neighbor-Maps",
+  "version": "1.0.0",
+  "description": "Udacity's Front-end Nanodegree project - My Neighborhood Map",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/friasdesign/neighborhood-map.git",
+    "type": "git"
+  },
+  "author": "Carlos Frias",
+  "license": "MIT"
+}
