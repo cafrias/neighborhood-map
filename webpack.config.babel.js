@@ -4,8 +4,13 @@ import path from 'path';
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
+const production = process.env.NODE_ENV === 'production';
+
 var plugins = [
-	new ExtractTextPlugin('styles.css')
+	new ExtractTextPlugin('styles.css'),
+	new webpack.DefinePlugin({
+		__DEVELOPMENT__: !production
+	})
 ];
 
 const config = {

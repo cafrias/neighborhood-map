@@ -8,7 +8,9 @@
     "type": "git"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress"
+    "dev": "webpack-dev-server --config webpack.config.babel.js",
+    "devtest": "webpack-dev-server --config webpack.tests.config.babel.js",
+    "test": "find ./test -name '*-spec.js' | xargs mocha -R min -r babel/register"
   },
   "author": "Carlos Frias",
   "license": "MIT",
@@ -24,6 +26,11 @@
     "webpack": "^1.13.3"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "mocha-loader": "^1.0.0",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0",
     "webpack-dev-server": "^1.16.2"
   }
 }

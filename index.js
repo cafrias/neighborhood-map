@@ -1,5 +1,5 @@
 /* jshint esversion:6 */
 
-const matraca = 'matraca';
+import message from './lib/message.js';
 
-console.log('Ay ay ay! tremenda ' + matraca);
+console.log(message());
