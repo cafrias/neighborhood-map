@@ -1,4 +1,105 @@
+/* GENERAL STYLES ________________________________________________
+ */
 body, html {
 	margin: 0;
 	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* COLORS ________________________________________________________
+ */
+.back-wht {
+	background-color: #f2f2f2;
+}
+
+.back-01 {
+	background-color: #d15f46;
+}
+
+.clr-01 {
+	color: #d15f46;
+}
+
+.clr-02 {
+	color:  #df8976;
+}
+
+.clr-blk {
+	color: #181818;
+}
+
+
+/* EFFECTS _______________________________________________________
+ */
+.drop-light-shadow {
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.50);
+}
+
+.drop-harsh-shadow {
+	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+/* SIDEBAR _______________________________________________________
+ */
+#sidebar {
+	width: 350px;
+	height: 100vh;
+	z-index: 10;
+	position: fixed;
+}
+
+.sidebar--collapsed {
+	left: -350px;
+	top: 0;
+	box-shadow: none;
+}
+
+.sidebar--open {
+	left: 0;
+	top: 0;
+}
+
+/* TOGGLE BUTTON __________________________________________________
+ */
+#toggle-btn {
+	width: 48px;
+	height: 48px;
+	padding-top: 6px;
+	padding-left: 7px;
+}
+
+.toggle-btn--collapsed {
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0.69;
+}
+
+.toggle-btn--collapsed:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.toggle-btn--open {
+	position: relative;
+	background: none;
+	left: 302px;
+	top: 0;
+	box-shadow: none;
+}
+
+.toggle-btn__cross--open {
+	transform: rotate(45deg);
 }
