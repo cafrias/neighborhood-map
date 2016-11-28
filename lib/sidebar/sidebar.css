@@ -1,0 +1,52 @@
+/* SIDEBAR _______________________________________________________
+ */
+#sidebar {
+	width: 350px;
+	height: 100vh;
+	z-index: 10;
+	position: fixed;
+}
+
+.sidebar--collapsed {
+	left: -350px;
+	top: 0;
+}
+
+.sidebar--open {
+	left: 0;
+	top: 0;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.50);
+}
+
+/* TOGGLE BUTTON __________________________________________________
+ */
+#toggle-btn {
+	width: 48px;
+	height: 48px;
+	padding-top: 6px;
+	padding-left: 7px;
+}
+
+.toggle-btn--collapsed {
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0.69;
+}
+
+.toggle-btn--collapsed:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.toggle-btn--open {
+	position: relative;
+	background: none;
+	left: 302px;
+	top: 0;
+	box-shadow: none;
+}
+
+.toggle-btn__cross--open {
+	transform: rotate(45deg);
+}
