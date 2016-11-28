@@ -1,9 +1,16 @@
 /* jshint esversion:6 */
 
 import path from 'path';
+import webpack from 'webpack';
 
 const hostname = 'localhost',
 			port = '8090';
+
+const plugins = [
+	new webpack.DefinePlugin({
+		__TESTING__: true
+	})
+];
 
 const config = {
 	entry: 'mocha!./test/index.js',
@@ -12,6 +19,9 @@ const config = {
 		path: path.join(__dirname, '/test')
 	},
 	module: {
+		noParse: [
+			/node_modules\/sinon/
+		],
 		loaders: [
 			{
 				test: /\.js$/,
@@ -29,6 +39,7 @@ const config = {
 			}
 		]
 	},
+	plugins,
 	devServer: {
 		host: hostname,
 		port: port,

@@ -6,9 +6,10 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 const production = process.env.NODE_ENV === 'production';
 
-var plugins = [
+const plugins = [
 	new ExtractTextPlugin('styles.css'),
 	new webpack.DefinePlugin({
+		__TESTING__: false,
 		__DEVELOPMENT__: !production
 	})
 ];

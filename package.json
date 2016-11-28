@@ -29,6 +29,7 @@
     "chai": "^3.5.0",
     "mocha": "^3.1.2",
     "mocha-loader": "^1.0.0",
+    "null-loader": "^0.1.1",
     "sinon": "^1.17.6",
     "sinon-chai": "^2.8.0",
     "webpack-dev-server": "^1.16.2"
