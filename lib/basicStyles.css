@@ -10,12 +10,20 @@ html {
 }
 
 body {
-	font-family: Roboto, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 }
 
 *, *:before, *:after {
 	box-sizing: inherit;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.height-100 {
+	height: 100%;
 }
 
 /* COLORS ________________________________________________________
@@ -36,6 +44,10 @@ body {
 	color:  #df8976;
 }
 
+.clr-wht {
+	color: #f2f2f2;
+}
+
 .clr-blk {
 	color: #181818;
 }
@@ -49,4 +61,51 @@ body {
 
 .drop-harsh-shadow {
 	box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.50);
+}
+
+/* TEXT __________________________________________________________
+ */
+
+h1 {
+	font-size: 1.8rem;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.subheading {
+	font-weight: lighter;
+	margin: 0;
+	font-size: 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/* FLEXBOX ______________________________________________________
+ */
+.flx-container {
+	display: flex;
+}
+
+.flx-dir-column {
+	flex-direction: column;
+}
+
+.flx-just-between {
+	justify-content: space-between;
 }

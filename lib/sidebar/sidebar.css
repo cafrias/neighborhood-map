@@ -5,6 +5,13 @@
 	height: 100vh;
 	z-index: 10;
 	position: fixed;
+	padding: 0.5rem 1.2rem;
+}
+
+#sidebar section {
+	border-top: 1px solid #df8976;
+	margin-top: 1rem;
+	padding: 0.8rem 0;
 }
 
 .sidebar--collapsed {
@@ -40,7 +47,7 @@
 }
 
 .toggle-btn--open {
-	position: relative;
+	position: absolute;
 	background: none;
 	left: 302px;
 	top: 0;
@@ -49,4 +56,27 @@
 
 .toggle-btn__cross--open {
 	transform: rotate(45deg);
+}
+
+/* SEARCHBOX ______________________________________________________
+ */
+#searchbox {
+	height: 25px;
+}
+
+/* LIST ___________________________________________________________
+ */
+#location-list {
+	margin: 0;
+	padding-top: 0.5rem;
+	padding-left: 2rem;
+}
+
+#location-list>li {
+	margin-bottom: 0.8rem;
+}
+
+#location-list>li:hover {
+	color: #f2f2f2;
+	cursor: pointer;
 }
