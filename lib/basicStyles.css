@@ -11,7 +11,7 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 *, *:before, *:after {
@@ -26,26 +26,56 @@ body {
 	height: 100%;
 }
 
+/* MARGIN - PADDING ________________________________________________
+ */
+.no-margin {
+	margin: 0;
+}
+
+.no-padding: {
+	padding: 0;
+}
+
+.pad-space {
+	padding: 0 0.5rem 0 0.5rem;
+}
+
 /* COLORS ________________________________________________________
  */
 .back-wht {
-	background-color: #f2f2f2;
+	background-color: #fafafa;
 }
 
 .back-01 {
-	background-color: #d15f46;
+	background-color: #ffce99;
 }
 
 .clr-01 {
-	color: #d15f46;
+	color: #ffce99;
 }
 
 .clr-02 {
-	color:  #df8976;
+	color:  #ff8400;
+}
+
+.clr-03 {
+	color: #4c361e;
+}
+
+.clr-04 {
+	color: #66727f;
+}
+
+.clr-05 {
+	color: #3d82cc;
+}
+
+.clr-06 {
+	color: #0f2d4c;
 }
 
 .clr-wht {
-	color: #f2f2f2;
+	color: #fafafa;
 }
 
 .clr-blk {
@@ -67,21 +97,19 @@ body {
  */
 
 h1 {
-	font-size: 1.8rem;
+	font-size: 30px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 .subheading {
 	font-weight: lighter;
-	margin: 0;
-	font-size: 1rem;
+	font-size: 20px;
 }
 
 h2 {
-	font-size: 1.2rem;
-	margin-top: 0;
-	margin-bottom: 0.5rem;
+	font-size: 22px;
+	margin: 0;
 }
 
 .align-right {

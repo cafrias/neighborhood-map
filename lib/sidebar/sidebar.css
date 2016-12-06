@@ -8,10 +8,12 @@
 	padding: 0.5rem 1.2rem;
 }
 
+.sidebar__app-title {
+	margin-bottom: 4rem;
+}
+
 #sidebar section {
-	border-top: 1px solid #df8976;
-	margin-top: 1rem;
-	padding: 0.8rem 0;
+	margin-bottom: 3rem;
 }
 
 .sidebar--collapsed {
@@ -64,19 +66,45 @@
 	height: 25px;
 }
 
+/* HEADER ____________________________________________________
+ */
+.sidebar__header-container {
+	margin-bottom: 0.8rem;
+}
+
+.sidebar__header {
+	margin-left: 10px;
+	white-space: nowrap;
+}
+
+.sidebar__header-line {
+	border-bottom: 2px solid #3d82cc;
+	height: 1rem;
+	width: 100%;
+}
+
 /* LIST ___________________________________________________________
  */
 #location-list {
 	margin: 0;
-	padding-top: 0.5rem;
-	padding-left: 2rem;
+	padding: 0;
+	list-style: none;
 }
 
 #location-list>li {
 	margin-bottom: 0.8rem;
 }
 
-#location-list>li:hover {
-	color: #f2f2f2;
+.loc {
+	color: #0f2d4c;
+}
+
+.loc:hover {
+	color: #fafafa;
 	cursor: pointer;
+}
+
+.loc--hidden {
+	color: #66727f;
+	text-decoration: line-through;
 }
