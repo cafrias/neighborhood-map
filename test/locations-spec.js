@@ -1,6 +1,6 @@
 var chai = require('chai'),
 		expect = chai.expect,
-		map = require('../lib/map.js'),
+		map = require('../lib/map/map.js'),
 		sinon = require('sinon/pkg/sinon');
 
 describe('Locations', function() {
@@ -13,6 +13,7 @@ describe('Locations', function() {
 	context('when displayed on map', function() {
 		before(function() {
 			global._MAP_ = 'mainMap';
+			global._MARKERS_ = [];
 		});
 
 		beforeEach(function() {
@@ -38,5 +39,11 @@ describe('Locations', function() {
 			map.displayLocations();
 			expect(global._MARKERS_[0].map).to.be.deep.equal('mainMap');
 		});
+	});
+
+	// TODO: when displayed on list
+
+	after(function() {
+		global._MARKERS_ = undefined;
 	});
 });
