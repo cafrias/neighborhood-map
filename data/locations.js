@@ -60,25 +60,4 @@ var locations = [
 	}
 ];
 
-if(__TESTING__) {
-	locations = [
-		{
-			title: 'Sanatorio Fueguino',
-			position: {lat: -53.7707509, lng: -67.70989999999999}
-		},
-		{
-			title: 'Nuevo Centro',
-			position: {lat: -53.772523, lng: -67.7107274}
-		},
-		{
-			title: 'GECALCTDF',
-			position: {lat: -53.7722445, lng: -67.7097618}
-		},
-		{
-			title: 'Soki Studio',
-			position: {lat: -53.77077949999999, lng: -67.7116635}
-		}
-	];
-}
-
 export default locations;
