@@ -37,7 +37,8 @@
 					<h2 class="sidebar__header">List of Places</h2>
 				</header>
 				<div class="pad-space">
-					<ul id="location-list" class="clr-06">
+					<ul id="location-list" class="clr-06" data-bind="foreach: map.markers">
+						<li class="loc" data-bind="text: title"></li>
 					</ul>
 				</div>
 			</section>
@@ -48,6 +49,6 @@
 	</div>
 	<div id="map"></div>
 	<script src="bundle.js"></script>
-	<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyDlp-FPcPhdPG9CVOeYcKGkOKbRSIgVbfQ&v=3&callback=initMap"></script> -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyDlp-FPcPhdPG9CVOeYcKGkOKbRSIgVbfQ&v=3&callback=main"></script>
 </body>
 </html>
