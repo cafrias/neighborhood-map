@@ -37,8 +37,13 @@
 					<h2 class="sidebar__header">List of Places</h2>
 				</header>
 				<div class="pad-space">
-					<ul id="location-list" class="clr-06" data-bind="foreach: map.markers">
-						<li class="loc" data-bind="text: title"></li>
+					<ul id="location-list" class="clr-06" data-bind="foreach: markers">
+						<!-- ko if: $parent.checkHiddenMarker(title) -->
+							<li class="loc" data-bind="text: title, click: $parent.filterClick"></li>
+						<!-- /ko -->
+						<!-- ko ifnot: $parent.checkHiddenMarker(title) -->
+							<li class="loc loc--hidden" data-bind="text: title, click: $parent.filterClick"></li>
+						<!-- /ko -->
 					</ul>
 				</div>
 			</section>
