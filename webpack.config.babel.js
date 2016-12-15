@@ -39,7 +39,8 @@ const config = {
 	devServer: {
 		contentBase: './public',
 		colors: true,
-		inline: true
+		inline: true,
+		host: '0.0.0.0'
 	}
 };
 
