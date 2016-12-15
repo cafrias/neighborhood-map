@@ -7,7 +7,9 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 const production = process.env.NODE_ENV === 'production';
 
 const plugins = [
-	new ExtractTextPlugin('styles.css'),
+	new ExtractTextPlugin({
+		filename: 'styles.css'
+	}),
 	new webpack.DefinePlugin({
 		__TESTING__: false,
 		__DEVELOPMENT__: !production
@@ -24,15 +26,19 @@ const config = {
 	},
 	plugins: plugins,
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
-				loader: 'babel'
+				enforce: 'pre',
+				loader: 'babel-loader'
 			},
 			{
 				test: /\.css$/,
-				loader: ExtractTextPlugin.extract('style', 'css')
+				loader: ExtractTextPlugin.extract({
+					fallbackLoader: 'style-loader',
+					loader: 'css-loader'	
+				})
 			}
 		]
 	},
