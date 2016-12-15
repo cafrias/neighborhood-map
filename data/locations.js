@@ -27,10 +27,6 @@ var locations = [
 		position: {lat: -53.77077949999999, lng: -67.7116635}
 	},
 	{
-		title: 'Expo Pizza',
-		position: {lat: -53.7860374, lng: -67.7002243}
-	},
-	{
 		title: 'Solo Música',
 		position: {lat: -53.7714647, lng: -67.7128068}
 	},

@@ -22,7 +22,10 @@
 				<h1 class="upper">My Neighborhood</h1>
 				<p class="subheading italic no-margin">"Mutual" Neighborhood</p>
 			</header>
-			<section>
+			<div id="sidebar__buttons">
+				<button id="all-btn" data-bind="click: resetAction">Display All</button>
+			</div>
+			<section class="sidebar__section">
 				<header class="sidebar__header-container flx-container flx-just-between">
 					<div class="sidebar__header-line"></div>
 					<h2 class="sidebar__header">Search Places</h2>
@@ -31,7 +34,7 @@
 					<input id="searchbox" type="text" class="width-100">
 				</div>
 			</section>
-			<section class="height-100">
+			<section class="height-100 sidebar__section--last">
 				<header class="sidebar__header-container flx-container flx-just-between">
 					<div class="sidebar__header-line"></div>
 					<h2 class="sidebar__header">List of Places</h2>
@@ -39,10 +42,10 @@
 				<div class="pad-space">
 					<ul id="location-list" class="clr-06" data-bind="foreach: markers">
 						<!-- ko if: $parent.checkHiddenMarker(title) -->
-							<li class="loc" data-bind="text: title, click: $parent.filterClick"></li>
+							<li class="loc" data-bind="text: title, click: $parent.filterClickAction"></li>
 						<!-- /ko -->
 						<!-- ko ifnot: $parent.checkHiddenMarker(title) -->
-							<li class="loc loc--hidden" data-bind="text: title, click: $parent.filterClick"></li>
+							<li class="loc loc--hidden" data-bind="text: title, click: $parent.filterClickAction"></li>
 						<!-- /ko -->
 					</ul>
 				</div>

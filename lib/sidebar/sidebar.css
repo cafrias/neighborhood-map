@@ -12,8 +12,12 @@
 	margin-bottom: 4rem;
 }
 
-#sidebar section {
+.sidebar__section {
 	margin-bottom: 3rem;
+}
+
+.sidebar__section--last {
+	margin-bottom: 0;
 }
 
 .sidebar--collapsed {
@@ -107,4 +111,26 @@
 .loc--hidden {
 	color: #66727f;
 	text-decoration: line-through;
+}
+
+
+/* BUTTONS ___________________________________________________________
+ */
+#all-btn {
+	min-height: 48px;
+	min-width: 144px;
+	background: none;
+	border: 1px solid #4c2700;
+	border-radius: 10px;
+}
+
+#all-btn:hover {
+	background-color: #3d82cc;
+	color: #fafafa;
+	border-color: transparent;
+	transition: 0.3s;
+}
+
+#sidebar__buttons {
+	margin-bottom: 0.7rem;
 }
