@@ -571,7 +571,7 @@
       // on the map.
       function displayDirections(origin) {
         hideMarkers(markers);
-        var directionsService = new google.maps.DirectionsService;
+        var directionsService = new google.maps.DirectionsService();
         // Get the destination address from the user entered value.
         var destinationAddress =
             document.getElementById('search-within-time-text').value;
