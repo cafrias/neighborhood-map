@@ -1,7 +1,6 @@
 /* SIDEBAR _______________________________________________________
  */
 #sidebar {
-	width: 350px;
 	height: 100vh;
 	z-index: 10;
 	position: fixed;
@@ -22,13 +21,34 @@
 
 .sidebar--collapsed {
 	left: -350px;
+	width: 0;
 	top: 0;
 }
 
 .sidebar--open {
 	left: 0;
 	top: 0;
+	width: 350px;
 	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.50);
+}
+
+@media screen and (min-width: 820px) {
+	#placesSection {
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.sidebar--open {
+		width: 100%;
+		overflow-y: scroll;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.sidebar--open {
+		overflow-y: scroll;
+	}
 }
 
 /* TOGGLE BUTTON __________________________________________________

@@ -12,3 +12,20 @@
 
 /* INFOWINDOW STYLES ___________________________________________________________
  */
+@media screen and (max-width: 480px) {
+	#infoWindow {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	#pano {
+		order: 1;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	#extraInfo {
+		order: 2;
+		width: 100%;
+	}
+}
