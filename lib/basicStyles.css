@@ -150,6 +150,10 @@ h2 {
 	justify-content: space-between;
 }
 
+.flx-grow-2 {
+	flex-grow: 2;
+}
+
 /* LIST _________________________________________________________
  */
 .ul-no-bullet {

@@ -17,7 +17,7 @@
 			    <path d="M22,23 L22,10 L25,10 L25,23 L39,23 L39,26 L25,26 L25,40 L22,40 L22,26 L9,26 L9,23 L22,23 Z" id="Combined-Shape-Copy" stroke="none" fill="#4C2700" fill-rule="evenodd" opacity="0.7"></path>
 			</svg>
 		</div>
-		<div id="sidebar-content" class="flx-container flx-dir-column flx-just-between height-100">
+		<div id="sidebar-content" class="flx-container flx-dir-column height-100">
 			<header class="sidebar__app-title">
 				<h1 class="upper">My Neighborhood</h1>
 				<p class="subheading italic no-margin">"Mutual" Neighborhood</p>
@@ -25,31 +25,33 @@
 			<div id="sidebar__buttons">
 				<button id="all-btn" data-bind="click: resetAction">Display All</button>
 			</div>
-			<section class="sidebar__section">
-				<header class="sidebar__header-container flx-container flx-just-between">
-					<div class="sidebar__header-line"></div>
-					<h2 class="sidebar__header">Search Places</h2>
-				</header>
-				<div class="pad-space">
-					<input id="searchbox" type="text" class="width-100" data-bind="textInput: filterWord">
-				</div>
-			</section>
-			<section id="placesSection" class="sidebar__section--last">
-				<header class="sidebar__header-container flx-container flx-just-between">
-					<div class="sidebar__header-line"></div>
-					<h2 class="sidebar__header">List of Places</h2>
-				</header>
-				<div class="pad-space">
-					<ul id="location-list" class="clr-06 ul-no-bullet" data-bind="foreach: markers">
-						<!-- ko if: $parent.checkHiddenMarker(title) -->
-							<li class="loc" data-bind="text: title, click: $parent.filterClickAction"></li>
-						<!-- /ko -->
-						<!-- ko ifnot: $parent.checkHiddenMarker(title) -->
-							<li class="loc loc--hidden" data-bind="text: title, click: $parent.filterClickAction"></li>
-						<!-- /ko -->
-					</ul>
-				</div>
-			</section>
+			<div id="sections" class="flx-grow-2">
+				<section class="sidebar__section">
+					<header class="sidebar__header-container flx-container flx-just-between">
+						<div class="sidebar__header-line"></div>
+						<h2 class="sidebar__header">Search Places</h2>
+					</header>
+					<div class="pad-space">
+						<input id="searchbox" type="text" class="width-100" data-bind="textInput: filterWord">
+					</div>
+				</section>
+				<section class="sidebar__section--last">
+					<header class="sidebar__header-container flx-container flx-just-between">
+						<div class="sidebar__header-line"></div>
+						<h2 class="sidebar__header">List of Places</h2>
+					</header>
+					<div class="pad-space">
+						<ul id="location-list" class="clr-06 ul-no-bullet" data-bind="foreach: markers">
+							<!-- ko if: $parent.checkHiddenMarker(title) -->
+								<li class="loc" data-bind="text: title, click: $parent.filterClickAction"></li>
+							<!-- /ko -->
+							<!-- ko ifnot: $parent.checkHiddenMarker(title) -->
+								<li class="loc loc--hidden" data-bind="text: title, click: $parent.filterClickAction"></li>
+							<!-- /ko -->
+						</ul>
+					</div>
+				</section>
+			</div>
 			<footer class="width-100 align-right">
 				<small>by Carlos Frias</small>
 			</footer>

@@ -32,10 +32,8 @@
 	box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.50);
 }
 
-@media screen and (min-width: 820px) {
-	#placesSection {
-		height: 100%;
-	}
+#sections {
+	margin-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 480px) {
