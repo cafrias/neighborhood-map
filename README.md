@@ -2,28 +2,42 @@
 
 ## Introduction
 
-This application is part of Udacity's Front-end Nanodegree. And it's made based on this [rubric](www.add-site.com).
-[//]: # (TODO: Add rubric link)
+This application is part of Udacity's Front-end Nanodegree. And it's made based on this [rubric](https://review.udacity.com/#!/projects/2711658591/rubric).
+
+## Installation
+
+Clone the repository, in this example we're cloning into you HOME directory:
+
+```
+cd ~
+git clone https://github.com/friasdesign/neighborhood-map.git
+```
+
+Install dependencies:
+
+```
+# If using npm
+npm install
+
+# If using yarn
+yarn install
+```
+
+_I recommend using Yarn package manager, more info [here](https://yarnpkg.com/)_
 
 ## Getting Started
 
-[//]: # (TODO: Add instalation guide)
-
-To start developing, first run tests issuing the following command:
-
-``` 
-npm run devtest
-```
-
-Then, start devServer running, on another terminal instance, the following:
+To tun application on __development environment__:
 
 ```
 npm run dev
 ```
 
-Open two tabs on the browser:
+To run the application on __production environment__:
 
-- One at localhost:8080. Running the application.
-- Another at localhost:8090. Running the tests.
+```
+npm start
+```
 
-Both are _inlined_, meaning that they will get reloaded if there's a change on any JS file.
+Open the browser on `localhost:8080` to use the application.
+
