@@ -22,6 +22,10 @@ body {
 	width: 100%;
 }
 
+.width-66 {
+	width: 66.6%;
+}
+
 .height-100 {
 	height: 100%;
 }
@@ -120,6 +124,10 @@ h2 {
 	text-transform: uppercase;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .italic {
 	font-style: italic;
 }
@@ -130,10 +138,20 @@ h2 {
 	display: flex;
 }
 
+.flx-wrap {
+	flex-wrap: wrap;
+}
+
 .flx-dir-column {
 	flex-direction: column;
 }
 
 .flx-just-between {
 	justify-content: space-between;
+}
+
+/* LIST _________________________________________________________
+ */
+.ul-no-bullet {
+	list-style: none;
 }

@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700" rel="stylesheet">
 	<title>Neighborhood App</title>
 </head>
-<body>
+<body class="clr-06">
 	<div id="sidebar" class="back-01 sidebar--collapsed">
 		<div id="toggle-btn" class="back-01 drop-light-shadow toggle-btn--collapsed">
 			<svg width="32px" height="30px" viewBox="8 10 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -17,7 +17,7 @@
 			    <path d="M22,23 L22,10 L25,10 L25,23 L39,23 L39,26 L25,26 L25,40 L22,40 L22,26 L9,26 L9,23 L22,23 Z" id="Combined-Shape-Copy" stroke="none" fill="#4C2700" fill-rule="evenodd" opacity="0.7"></path>
 			</svg>
 		</div>
-		<div id="sidebar-content" class="clr-06 flx-container flx-dir-column flx-just-between height-100">
+		<div id="sidebar-content" class="flx-container flx-dir-column flx-just-between height-100">
 			<header class="sidebar__app-title">
 				<h1 class="upper">My Neighborhood</h1>
 				<p class="subheading italic no-margin">"Mutual" Neighborhood</p>
@@ -40,7 +40,7 @@
 					<h2 class="sidebar__header">List of Places</h2>
 				</header>
 				<div class="pad-space">
-					<ul id="location-list" class="clr-06" data-bind="foreach: markers">
+					<ul id="location-list" class="clr-06 ul-no-bullet" data-bind="foreach: markers">
 						<!-- ko if: $parent.checkHiddenMarker(title) -->
 							<li class="loc" data-bind="text: title, click: $parent.filterClickAction"></li>
 						<!-- /ko -->
