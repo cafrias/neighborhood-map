@@ -1,5 +1,9 @@
 /* jshint esversion:6 */
 
+/*
+Here we bring together all dependencies and define main function.
+ */
+
 // Import basic styles
 import normalizeCss from 'normalize-css/normalize.css';
 import basicStyles from './lib/basicStyles.css';
@@ -11,10 +15,17 @@ import ViewModel from './lib/viewModel/viewModel.js';
 import locations from './data/locations.js';
 import ko from 'knockout';
 
+/**
+ * Contains all primary logic of the application. Executed once
+ * google map is loaded.
+ */
 global.main = () => {
 	var viewModel = new ViewModel(ko, locations);
 	var sideBar = new SideBar();
 
+	// Knockout init _____________________________________________________________
 	ko.applyBindings(viewModel, document.getElementById('sidebar'));
+
+	// Initialize viewModel
 	viewModel.displayOnMap();
 };

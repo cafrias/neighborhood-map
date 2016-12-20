@@ -1,5 +1,10 @@
 /* jshint esversion:6 */
 
+/*
+This file contains configuration for Webpack bundler.
+More information on: https://webpack.js.org/configuration/
+ */
+
 import path from 'path';
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';

@@ -5,9 +5,7 @@ This file contains all information displayed on each marker.
 This file contains per each marker:
 - `position` --> lat lng for marker location
 - `title` --> title of the location
-
-For searching for positions using web API:
-https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDlp-FPcPhdPG9CVOeYcKGkOKbRSIgVbfQ&position=-53.769711,-67.716422&radius=30
+- `placeId` --> used by Google's Places Service
  */
 var locations = [
 	{
