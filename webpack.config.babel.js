@@ -9,24 +9,31 @@ import path from 'path';
 import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
+const production = process.env.NODE_ENV == 'production';
+
 var plugins = [
 	new ExtractTextPlugin({
 		filename: 'styles.css'
 	}),
 	new webpack.DefinePlugin({
-		__TESTING__: false,
 		'process.env': {
 			'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-		}
-	}),
-	new webpack.optimize.UglifyJsPlugin({
-		compress: {
-			warnings: false
 		}
 	})
 ];
 
-const config = {
+// IF IN PRODUCTION ____________________________________________________________
+if(production) {
+	plugins = plugins.concat([
+		new webpack.optimize.UglifyJsPlugin({
+			compress: {
+				warnings: false
+			}
+		})
+	]);
+}
+
+var config = {
 	entry: {
 		app: ['./index.js']
 	},
@@ -52,6 +59,7 @@ const config = {
 			}
 		]
 	},
+	devtool: production ? 'eval' : 'source-map',
 	devServer: {
 		contentBase: './public',
 		colors: true,
