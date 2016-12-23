@@ -57,8 +57,9 @@
 			</footer>
 		</div>
 	</div>
-	<div id="map"></div>
+	<main id="map"></main>
 	<script src="bundle.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyDlp-FPcPhdPG9CVOeYcKGkOKbRSIgVbfQ&v=3&callback=main"></script>
+	<!-- Google Map Async error handler in index.js for separation of concerns -->
+	<script id="googleScript" async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyDlp-FPcPhdPG9CVOeYcKGkOKbRSIgVbfQ&v=3&callback=main"></script>
 </body>
 </html>

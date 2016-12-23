@@ -29,3 +29,15 @@ global.main = () => {
 	// Initialize viewModel
 	viewModel.displayOnMap();
 };
+
+// GOOGLE MAPS ERROR HANDLING __________________________________________________
+document.addEventListener('DOMContentLoaded', () => {
+	document.getElementById('googleScript').addEventListener('error', () => {
+		document.getElementById('map').innerHTML =
+		`<div id="loadingError"
+					class="bold align-center height-100 width-100 flx-dir-column flx-container flx-just-center">
+			<p>Ooops! something went wrong try reloading</p>
+		</div>
+		`;
+	});
+});

@@ -120,6 +120,10 @@ h2 {
 	text-align: right;
 }
 
+.align-center {
+	text-align: center;
+}
+
 .upper {
 	text-transform: uppercase;
 }
@@ -144,6 +148,10 @@ h2 {
 
 .flx-dir-column {
 	flex-direction: column;
+}
+
+.flx-just-center {
+	justify-content: center;
 }
 
 .flx-just-between {
