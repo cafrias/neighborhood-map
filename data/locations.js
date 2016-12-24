@@ -5,58 +5,69 @@ This file contains all information displayed on each marker.
 This file contains per each marker:
 - `position` --> lat lng for marker location
 - `title` --> title of the location
+- `category` --> specifies the kind of interest point, since for my city Places doesn't have accurate info
 - `placeId` --> used by Google's Places Service
  */
 var locations = [
 	{
-		title: 'Sanatorio Fueguino',
-		position: {lat: -53.7707509, lng: -67.70989999999999},
-		placeId: 'ChIJBUUZFDkWS7wRDV3R1jDDw8o'
+		title: 'Libreria Rayuela',
+		position: {lat:  -53.78779, lng: -67.698502},
+		placeId: 'ChIJ5ZvebFwWS7wR2P5l8EfE7-0',
+		category: 'Store - Books'
 	},
 	{
-		title: 'Nuevo Centro',
-		position: {lat: -53.772523, lng: -67.7107274},
-		placeId: 'ChIJJZmjMD8WS7wRdUNDumRAGPU'
+		title: 'Tante Sara',
+		position: {lat: -53.788681, lng: -67.695649},
+		placeId: 'ChIJBfQEtkQWS7wRieFFAoOZaes',
+		category: 'Food'
 	},
 	{
-		title: 'Soki Studio',
-		position: {lat: -53.77077949999999, lng: -67.7116635},
-		placeId: 'ChIJ09AozD4WS7wRy1URU9IjVlc'
+		title: 'Don Pepone',
+		position: {lat: -53.789344, lng: -67.698187},
+		placeId: 'ChIJzco2qkQWS7wRVwEVlDFygmw',
+		category: 'Food'
 	},
 	{
-		title: 'Solo Música',
-		position: {lat: -53.7714647, lng: -67.7128068},
-		placeId: 'ChIJlQkTqUQWS7wRBhy__wpNnN4'
+		title: 'Status Hotel Casino',
+		position: {lat: -53.788065, lng: -67.696898},
+		placeId: 'ChIJT73PGlwWS7wRRawQlt56iTk',
+		category: 'Hotel'
 	},
 	{
-		title: 'Veterinaria Leiva',
-		position: {lat: -53.77277239999999, lng: -67.7106228},
-		placeId: 'ChIJzdEtOD8WS7wRBtWjKdZyJRE'
+		title: 'La Usina',
+		position: {lat: -53.786512, lng: -67.700149},
+		placeId: 'ChIJwQJz9VwWS7wRwOX4fhy8g2E',
+		category: 'Food'
 	},
 	{
-		title: 'Heladeria Almendra',
-		position: {lat: -53.76965, lng: -67.716453},
-		placeId: 'ChIJDd_k2zgWS7wRaFGb6cUEBps'
+		title: 'Centro Cultural Los Yaganes',
+		position: {lat: -53.782864, lng: -67.697042},
+		placeId: 'ChIJyU1H0kQWS7wRnqQ26hWinWg',
+		category: 'Culture - Museum'
 	},
 	{
-		title: 'Stylos Coiffeur',
-		position: {lat: -53.7696769, lng: -67.71630669999999},
-		placeId: 'ChIJ0UVqKjwWS7wR3jqmgWJl6tI'
+		title: 'Hospital regional rio grande',
+		position: {lat: -53.781992, lng: -67.698917},
+		placeId: 'ChIJf5qN6kQWS7wR1Q0PanvZJjg',
+		category: 'Health - Hospital'
 	},
 	{
-		title: 'Farmacia del Pueblo II',
-		position: {lat: -53.769576, lng: -67.71649649999999},
-		placeId: 'ChIJaWKoKzwWS7wRrMZsR3Yg8dc'
+		title: 'Restaurante Narcizo',
+		position: {lat: -53.787272, lng: -67.696751},
+		placeId: 'ChIJHQcui1sWS7wRuzwAqLdemFI',
+		category: 'Food'
 	},
 	{
-		title: 'Multirubro Las Vegas',
-		position: {lat: -53.7695717, lng: -67.7166314},
-		placeId: 'ChIJjw0UKzwWS7wRDca2SIW_k_k'
+		title: 'Autofarma',
+		position: {lat: -53.785995,lng: -67.698145},
+		placeId: 'ChIJe5dWgFwWS7wRtmuxnxqZ8Ic',
+		category: 'Health - Pharmacy'
 	},
 	{
-		title: 'Ksanuova Pizza Bar',
-		position: {lat: -53.76946710000001, lng: -67.7165602},
-		placeId: 'ChIJfeuGKzwWS7wRU6a1uZdvPRA'
+		title: 'ABC Deportes',
+		position: {lat: -53.787095, lng: -67.696378},
+		placeId: 'ChIJbVN7jFsWS7wRYn07uhArY2w',
+		category: 'Store - Sports'
 	}
 ];
 
