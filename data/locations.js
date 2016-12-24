@@ -19,18 +19,21 @@ var locations = [
 		title: 'Tante Sara',
 		position: {lat: -53.788681, lng: -67.695649},
 		placeId: 'ChIJBfQEtkQWS7wRieFFAoOZaes',
+		venueId: '4dcc8433ae603b786d0139a7',
 		category: 'Food'
 	},
 	{
 		title: 'Don Pepone',
 		position: {lat: -53.789344, lng: -67.698187},
 		placeId: 'ChIJzco2qkQWS7wRVwEVlDFygmw',
+		venueId: '4db61e21f7b121c29f6d0fb9',
 		category: 'Food'
 	},
 	{
 		title: 'Status Hotel Casino',
 		position: {lat: -53.788065, lng: -67.696898},
 		placeId: 'ChIJT73PGlwWS7wRRawQlt56iTk',
+		venueId: '4da58b785da3d30fafba427b',
 		category: 'Hotel'
 	},
 	{
@@ -55,6 +58,7 @@ var locations = [
 		title: 'Restaurante Narcizo',
 		position: {lat: -53.787272, lng: -67.696751},
 		placeId: 'ChIJHQcui1sWS7wRuzwAqLdemFI',
+		venueId: '4ed816049911a3e78a6fb5fd',
 		category: 'Food'
 	},
 	{
