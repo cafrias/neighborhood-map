@@ -35,7 +35,7 @@ if(production) {
 
 var config = {
 	entry: {
-		app: ['./index.js']
+		app: ['./index.js', 'whatwg-fetch']
 	},
 	output: {
 		path: path.join(__dirname, '/public'),
