@@ -10,6 +10,12 @@
 	height: 200px;
 }
 
+.window-error {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: darkred;
+}
+
 /* INFOWINDOW STYLES ___________________________________________________________
  */
 @media screen and (max-width: 480px) {
